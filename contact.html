@@ -33,25 +33,25 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./sway-chicago.html">Sway Chicago</a>
+          <a class="nav-link" href="./sway">Sway Chicago</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./biossat-orchestra.html">Biossat Orchestra</a>
+          <a class="nav-link" href="./biossat-orchestra">Biossat Orchestra</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./rythmique.html">Rythmique</a>
+          <a class="nav-link" href="./rythmique">Rythmique</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./chicago-gospel-choir.html">Chicago Gospel Choir</a>
+          <a class="nav-link" href="./chicago-gospel-choir">Chicago Gospel Choir</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./speakeasy-swing.html">Speakeasy Swing</a>
+          <a class="nav-link" href="./speakeasy-swing">Speakeasy Swing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./sophistique-strings.html">Sophistique Strings</a>
+          <a class="nav-link" href="./sophistique-strings">Sophistique Strings</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./pivot-disc-jockeys.html">Pivot Disc Jockeys</a>
+          <a class="nav-link" href="./pivot-disc-jockeys">Pivot Disc Jockeys</a>
         </li>
       </ul>
     </div>
@@ -86,33 +86,49 @@
           <div class="col-12">
             <h2>Contact Biossat Custom Productions</h2>
 
-            <form>
+            <form id="contact-bcp">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="firstName">First Name</label>
-                  <input type="text" class="form-control" id="firstName">
+                  <input type="text" class="form-control" id="firstName" name="firstName">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="lastName">Last Name</label>
-                  <input type="text" class="form-control" id="lastName">
+                  <input type="text" class="form-control" id="lastName" name="lastName">
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="email">Email address</label>
-                  <input type="email" class="form-control" id="email">
+                  <input type="email" class="form-control" id="email" name="email">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="phone">Phone</label>
-                  <input type="phone" class="form-control" id="phone">
+                  <input type="phone" class="form-control phone" id="phone" name="phone">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="group">Select Group Interested In</label>
+                  <select class="form-control" id="group" name="group">
+                    <option>-- Please Select --</option>
+                    <option value="Sway">Sway</option>
+                    <option value="Biossat Orchestra">Biossat Orchestra</option>
+                    <option value="Rythmique">Rythmique</option>
+                    <option value="Chicago Gospel Choir">Chicago Gospel Choir</option>
+                    <option value="Speakeasy Swing">Speakeasy Swing</option>
+                    <option value="Sophistique Strings">Sophistique Strings</option>
+                    <option value="Pivot Disc Jockeys">Pivot Disc Jockeys</option>
+                  </select>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group col-md-4">
                   <label for="eventType">Event Type</label>
-                  <select class="form-control" id="eventType">
+                  <select class="form-control" id="eventType" name="eventType">
                     <option value="Wedding">Wedding</option>
                     <option value="Corporate">Corporate</option>
                     <option value="Gala">Gala</option>
@@ -121,22 +137,22 @@
                 </div>
                 <div class="form-group col-md-4">
                   <label for="eventDate">Event Date</label>
-                  <input type="text" class="form-control" id="eventDate">
+                  <input type="text" class="form-control date" id="eventDate" name="eventDate">
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="venue">Venue</label>
-                  <input type="text" class="form-control" id="venue">
+                  <label for="eventVenue">Venue</label>
+                  <input type="text" class="form-control" id="eventVenue" name="eventVenue">
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="referredBy">Referred By</label>
-                  <input type="text" class="form-control" id="referredBy">
+                  <input type="text" class="form-control" id="referredBy" name="referredBy">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="preferredCommunication">Preferred Communication</label>
-                  <select class="form-control" id="preferredCommunication">
+                  <select class="form-control" id="preferredCommunication" name="preferredCommunication">
                     <option value="Phone Call">Phone Call</option>
                     <option value="Email">Email</option>
                     <option value="Text Message">Text Message</option>
@@ -147,13 +163,13 @@
               <div class="row">
                 <div class="form-group col-md-12">
                   <label for="comments">Comments</label>
-                  <textarea class="form-control" id="comments" rows="5"></textarea>
+                  <textarea class="form-control" id="comments" name="comments" rows="5"></textarea>
                 </div>
               </div>
 
               <div class="row justify-content-center form-btn">
                 <div class="col-6 col-sm-4 col-md-3">
-                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                  <button class="btn btn-primary btn-block">Submit</button>
                 </div>
               </div
             </form>
@@ -175,7 +191,7 @@
             <div class="col-sm-8 col-md-12">
               <ul id="contact-icons" class="list-inline text-center">
                 <li class="list-inline-item">
-                  <a href="./contact.html"><img src="images/icon-email.png" alt="Email Biossat Custom Productions" title="Email Biossat Custom Productions" class="img-fluid" /></a>
+                  <a href="./contact"><img src="images/icon-email.png" alt="Email Biossat Custom Productions" title="Email Biossat Custom Productions" class="img-fluid" /></a>
                 </li>
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/BiossatCustomProductions/" target="_blank"><img src="images/icon-facebook.png" alt="Follow Biossat Custom Productions on Facebook" title="Follow Biossat Custom Productions on Facebook" class="img-fluid" /></a>
@@ -202,25 +218,25 @@
               <h2 class="text-center">Click on a logo to learn more</h2>
               <ul class="list-inline text-center">
                 <li class="list-inline-item col-group">
-                  <a href="./sway-chicago.html"><img src="images/logo-sway-chicago.svg" alt="Sway Chicago" title="Sway Chicago" class="img-fluid" /></a>
+                  <a href="./sway"><img src="images/logo-sway-chicago.svg" alt="Sway Chicago" title="Sway Chicago" class="img-fluid" /></a>
                 </li>
                 <li class="list-inline-item col-group">
-                  <a href="./biossat-orchestra.html"><img src="images/logo-biossat-orchestra.svg" alt="The Biossat Orchestra" title="The Biossat Orchestra" class="img-fluid" /></a>
+                  <a href="./biossat-orchestra"><img src="images/logo-biossat-orchestra.svg" alt="The Biossat Orchestra" title="The Biossat Orchestra" class="img-fluid" /></a>
                 </li>
                 <li class="list-inline-item col-group">
-                  <a href="./rythmique.html"><img src="images/logo-rythmique.svg" alt="rythmique" title="rythmique" class="img-fluid" /></a>
+                  <a href="./rythmique"><img src="images/logo-rythmique.svg" alt="rythmique" title="rythmique" class="img-fluid" /></a>
                 </li>
                 <li class="list-inline-item col-group">
-                  <a href="./chicago-gospel-choir.html"><img src="images/logo-chicago-gospel-choir.svg" alt="Chicago Gospel Choir" title="Chicago Gospel Choir" class="img-fluid" /></a>
+                  <a href="./chicago-gospel-choir"><img src="images/logo-chicago-gospel-choir.svg" alt="Chicago Gospel Choir" title="Chicago Gospel Choir" class="img-fluid" /></a>
                 </li>
                 <li class="list-inline-item col-group">
-                  <a href="./speakeasy-swing.html"><img src="images/logo-speakeasy-swing.svg" alt="Speakeasy Swing" title="Speakeasy Swing" class="img-fluid" /></a>
+                  <a href="./speakeasy-swing"><img src="images/logo-speakeasy-swing.svg" alt="Speakeasy Swing" title="Speakeasy Swing" class="img-fluid" /></a>
                 </li>
                 <li class="list-inline-item col-group">
-                  <a href="./sophistique-strings.html"><img src="images/logo-sophistique-strings.svg" alt="Sophistique Strings" title="Sophistique Strings" class="img-fluid" /></a>
+                  <a href="./sophistique-strings"><img src="images/logo-sophistique-strings.svg" alt="Sophistique Strings" title="Sophistique Strings" class="img-fluid" /></a>
                 </li>
                 <li class="list-inline-item col-group">
-                  <a href="./pivot-disc-jockeys.html"><img src="images/logo-pivot.svg" alt="Pivot Disc Jockeys" title="Pivot Disc Jockeys" class="img-fluid" /></a>
+                  <a href="./pivot-disc-jockeys"><img src="images/logo-pivot.svg" alt="Pivot Disc Jockeys" title="Pivot Disc Jockeys" class="img-fluid" /></a>
                 </li>
               </ul>
             </div>
@@ -232,6 +248,63 @@
 
 
 <script src="js/script-min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.date').mask('00/00/0000');
+    $('.phone').mask('(000) 000-0000');
+
+    // Construct URL object using current browser URL
+    var url = new URL(document.location);
+
+    // Get query parameters object
+    var params = url.searchParams;
+
+    // Get value of paper
+    var group = params.get("group");
+
+    // Set it as the dropdown value
+    //console.log(group);
+    if (group != null) {
+      $("#group").val(group);
+    }
+
+  });
+  (function(){
+    emailjs.init("user_MtNYG9o9OBBMtGMnulZI8");
+  })();
+</script>
+<script type="text/javascript">
+  var myform = $("form#contact-bcp");
+  myform.submit(function(event){
+  event.preventDefault();
+
+  var params = myform.serializeArray().reduce(function(obj, item) {
+     obj[item.name] = item.value;
+     return obj;
+  }, {});
+
+  // Change to your service ID, or keep using the default service
+  var service_id = "default_service";
+
+  var template_id = "template_biossat";
+  myform.find("button").text("Sending...");
+  emailjs.send(service_id,template_id,params)
+    .then(function(){
+       alert("Thank you! We have received your submission and will contact you shortly.");
+       myform.find("button").text("Send");
+       myform.each(function(){
+            this.reset();
+        });
+     }, function(err) {
+       alert("Uh oh! The form failed to send!\r\n Response:\n " + JSON.stringify(err));
+       myform.find("button").text("Send");
+    });
+  return false;
+  });
+</script>
+
 </body>
 
 </html>
