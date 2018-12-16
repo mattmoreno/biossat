@@ -1,10 +1,18 @@
 #group-info {
   background: rgba($black, 0.6);
   position: relative;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 40px;
   color: $white;
-  margin-top: -150px;
+  margin-top: 50px;
+
+  .group-photo {
+    margin-bottom: 30px;
+
+    img {
+      border:solid 20px rgba($black, 0.6);
+    }
+  }
 
   .group-about p {
     margin-bottom: 30px;

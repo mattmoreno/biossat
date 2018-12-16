@@ -1,0 +1,33 @@
+.tab-content>.active {
+    display: block;
+    overflow-y: scroll;
+    max-height: 350px;
+    margin-top:25px;
+    font-size: 0.9rem;
+}
+/*.tab-content>.tab-pane {
+    display: none;
+}*/
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-color: transparent;
+}
+
+.nav-tabs .nav-item {
+    font-size: 0.8rem;
+}
+
+@include media-breakpoint-up(md) {
+
+}
+@include media-breakpoint-up(lg) {
+
+}
+@include media-breakpoint-up(xl) {
+
+}
